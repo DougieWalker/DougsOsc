@@ -199,9 +199,9 @@
 ?>
 
    <div class="buttonSet row">
-    <div class="col-xs-6"><?php 
-
-if ($reviews['count'] > 0) {
+    <div class="col-xs-6">
+    <?php 
+    if ($reviews['count'] > 0) {
 echo tep_draw_button(IMAGE_BUTTON_REVIEWS . (($reviews['count'] > 0) ? ' (' . $reviews['count'] . ')' : ''), 'fa fa-heart', tep_href_link(FILENAME_PRODUCT_REVIEWS, tep_get_all_get_params()), 'primary', NULL, 'btn-primary'); }else{
 echo tep_draw_button(IMAGE_BUTTON_WRITE_REVIEW, 'fa fa-heart', tep_href_link(FILENAME_PRODUCT_REVIEWS_WRITE, tep_get_all_get_params()), 'primary', NULL, 'btn-primary'); }?></div>
 
